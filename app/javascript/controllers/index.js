@@ -9,3 +9,4 @@ application.register("hello", HelloController)
 
 import TomSelectController from "./tom_select_controller.js"
 application.register("tom-select", TomSelectController)
+

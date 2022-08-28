@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'lists#index'
+  # get "landing" => "pages#landing"
+  root to: "pages#landing"
   resources :lists, only: [ :index, :new, :create, :show, :destroy ] do
     resources :bookmarks, only: [ :new, :create ]
     # resources :reviews, only: :create
