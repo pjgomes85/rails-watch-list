@@ -15,7 +15,7 @@
 require 'open-uri'
 require 'json'
 
-url = "http://imdbapi.org?q=Fargo"
+url = "http://tmdb.lewagon.com/movie/top_rated"
 10.times do |i|
   puts "Importing movies from page #{i + 1}"
   movies = JSON.parse(URI.open("#{url}?page=#{i + 1}").read)['results']
